@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Saturn - The Ringed Giant | Explore the Gas Giant</title>
+    <meta
+      name="description"
+      content="Explore Saturn, the magnificent ringed planet. Discover fascinating facts about the sixth planet from the Sun, its spectacular ring system, and dozens of moons."
+    />
+    <meta
+      name="keywords"
+      content="Saturn, planet, rings, solar system, astronomy, space, gas giant"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-header data-pin-threshold="2">
+      <a class="site-header__brand" href="#home">Saturn</a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="primary-nav__list">
+          <li>
+            <a class="primary-nav__link" href="#home" aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="primary-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="primary-nav__link" href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a class="primary-nav__link" href="#facts">Facts</a>
+          </li>
+          <li>
+            <a class="primary-nav__link" href="#missions">Missions</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section
+        class="hero hero--header-overlap"
+        id="home"
+        aria-labelledby="hero-title"
+      >
+        <div class="site-container" data-header-offset>
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">Saturn</h1>
+            <p class="hero__subtitle">
+              The magnificent ringed planet that has captivated astronomers and
+              dreamers for centuries.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="#about">Explore Saturn</a>
+              <a class="button" href="#gallery">View Gallery</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="site-container about__container">
+          <header class="about__header">
+            <h2 class="about__title" id="about-title">
+              About <span>Saturn</span>
+            </h2>
+            <p class="about__subtitle">
+              Saturn, the sixth planet from the Sun, is a gas giant known for
+              its spectacular ring system and dozens of fascinating moons.
+            </p>
+          </header>
+
+          <div class="about__body">
+            <figure class="about__media" aria-labelledby="about-figure-caption">
+              <img
+                src="./images/about-saturn.png"
+                alt="Saturn and its rings in space"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="visually-hidden" id="about-figure-caption">
+                An elegant portrait of Saturn and its breathtaking rings — a
+                concise glimpse into its details and the depths of space.
+              </figcaption>
+            </figure>
+
+            <article class="about__content">
+              <h3 class="about__heading">The Gas Giant</h3>
+              <p>
+                Saturn is composed primarily of hydrogen and helium, making it
+                the least dense planet in our solar system. If you could find an
+                ocean big enough, Saturn would actually float!
+              </p>
+              <p>
+                The planet's most distinctive feature is its ring system, made
+                up of countless particles of ice and rock ranging in size from
+                tiny grains to house-sized chunks.
+              </p>
+              <p>
+                Saturn's atmosphere features beautiful bands of clouds and a
+                mysterious hexagonal storm at its north pole&mdash;a phenomenon
+                unique in our solar system.
+              </p>
+            </article>
+          </div>
+
+          <dl class="about__stats">
+            <div class="about__stat">
+              <dt>Distance from Sun</dt>
+              <dd>
+                <data class="about__stat-value" value="1430000000"
+                  >1.43 billion km</data
+                >
+                <span class="about__stat-meta"
+                  >About 9.5 times farther from the Sun than Earth</span
+                >
+              </dd>
+            </div>
+
+            <div class="about__stat">
+              <dt>Day Length</dt>
+              <dd>
+                <data class="about__stat-value" value="10.7">10.7 hours</data>
+                <span class="about__stat-meta"
+                  >One of the shortest days in the solar system</span
+                >
+              </dd>
+            </div>
+
+            <div class="about__stat">
+              <dt>Year Length</dt>
+              <dd>
+                <data class="about__stat-value" value="29">29 Earth years</data>
+                <span class="about__stat-meta"
+                  >Time it takes to orbit the Sun once</span
+                >
+              </dd>
+            </div>
+
+            <div class="about__stat">
+              <dt>Moons</dt>
+              <dd>
+                <data class="about__stat-value" value="146">146 confirmed</data>
+                <span class="about__stat-meta"
+                  >Including Titan, larger than Mercury</span
+                >
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
