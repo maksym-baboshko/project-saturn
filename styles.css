@@ -444,15 +444,6 @@ a:focus-visible {
 }
 
 /** GALLERY **/
-.gallery {
-  background: linear-gradient(
-    180deg,
-    var(--color-bg) 0%,
-    rgba(4, 11, 25, 0.95) 50%,
-    rgba(8, 15, 35, 0.9) 100%
-  );
-}
-
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
